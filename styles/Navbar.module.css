@@ -1,0 +1,41 @@
+.navbar {
+  display: flex;
+  height: 120px;
+  max-height: 120px;
+  min-height: 120px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background-color: #121212;
+  color: white;
+  font-family: "JetBrainsMono";
+  font-size: 1.5rem;
+  position: sticky;
+  z-index: 50;
+  top: 0;
+}
+
+.navbar h1 {
+  font-size: 2rem;
+  word-break: normal;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.navbar button {
+  cursor: pointer;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  background-color: #1c53a4;
+  color: white;
+}
