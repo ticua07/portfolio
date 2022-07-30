@@ -1,0 +1,19 @@
+.container {
+  padding-top: 15px;
+  height: 500px;
+  background-image: url("../public/coding.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pfp {
+  border-radius: 50px;
+}
+
+.name {
+  color: white;
+  font-size: 64px;
+}
