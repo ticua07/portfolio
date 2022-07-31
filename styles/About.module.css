@@ -1,5 +1,6 @@
 .container {
   display: flex;
+  height: 400px;
   padding-inline: 15px;
   padding-block: 60px;
   width: 100%;
@@ -15,7 +16,10 @@
 }
 
 .text__container {
+  font-family: "Inconsolata";
   flex: 0.6;
+  align-self: center;
+  row-gap: 110px;
 }
 
 .about__text {

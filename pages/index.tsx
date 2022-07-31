@@ -1,9 +1,10 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Script from "next/script";
-import About from "../components/About";
-import Introduction from "../components/Introduction";
-import NavBar from "../components/Navbar";
+import About from "../sections/About";
+import Introduction from "../sections/Introduction";
+import NavBar from "../sections/Navbar";
+import Skills from "../sections/Skills";
 
 const Home: NextPage = () => {
   return (
@@ -15,6 +16,7 @@ const Home: NextPage = () => {
       <NavBar />
       <Introduction />
       <About />
+      <Skills />
     </div>
   );
 };
