@@ -34,7 +34,7 @@ const Introduction: NextPage = () => {
       <small
         style={{
           color: "gray",
-          marginTop: "97.6px",
+          marginTop: "54.8px",
           backgroundColor: "black",
         }}
       >

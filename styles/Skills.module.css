@@ -1,9 +1,9 @@
 .container {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
   min-height: 400px;
   padding-inline: 15px;
-  padding-block: 60px;
+  padding-block: 30px;
   width: 100%;
   background-color: #131313;
 }
@@ -11,14 +11,9 @@
 .title__container {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  /* flex-direction: ol; */
   gap: 5px;
   flex: 0.4;
-}
-
-.text__container {
-  flex: 0.6;
-  align-self: center;
 }
 
 .about__text {
@@ -39,53 +34,51 @@
 }
 
 .title {
+  margin-bottom: 25px;
   text-align: end;
   align-self: center;
   flex: 0.1;
   padding-left: 2rem;
   color: white;
-  margin: 0;
   font-family: "JetBrainsMono";
   font-size: 48px;
 }
 
 @media only screen and (max-width: 750px) {
   .container {
-    flex-direction: column;
     align-items: center;
-  }
-  .title__container {
-    flex-direction: column;
   }
   .title {
     padding-left: 0px;
   }
-  .separator {
-    width: 100%;
-  }
 }
 .container {
   display: flex;
-  padding-inline: 15px;
-  padding-block: 60px;
   width: 100%;
-  background-color: #131313;
+  background-color: #141414;
 }
 
 .title__container {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 5px;
   flex: 0.4;
 }
 
+.separator {
+  width: 100%;
+}
+
 .text__container {
+  margin-bottom: 25px;
   flex: 0.6;
   align-self: center;
+  color: white;
 }
 
 .about__text {
+  font-family: "Inconsolata";
   flex: 0.8;
   text-align: center;
   color: white;
@@ -102,16 +95,6 @@
   font-style: normal;
 }
 
-.title {
-  align-self: center;
-  flex: 0.1;
-  padding-right: 2rem;
-  color: white;
-  margin: 0;
-  font-family: "JetBrainsMono";
-  font-size: 48px;
-}
-
 @media only screen and (max-width: 750px) {
   .container {
     flex-direction: column;
@@ -126,4 +109,47 @@
   .separator {
     width: 100%;
   }
+}
+
+.project {
+  margin-top: 30px;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  flex-basis: 0;
+  gap: 25px;
+  justify-content: center;
+}
+
+.project__title {
+  margin-left: 25px;
+  font-family: "Inconsolata";
+  font-size: 46px;
+}
+
+.project__text {
+  font-family: "Rubik";
+  font-weight: 200;
+}
+
+@media only screen and (max-width: 750px) {
+  .project {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  .project__title {
+    margin: 0;
+    text-align: center;
+  }
+}
+
+.image {
+  flex: 0.5 1 1;
+  align-self: center;
+  justify-content: center;
+  flex-basis: 0;
+  /* height: 100%; */
+  width: 50%;
 }
