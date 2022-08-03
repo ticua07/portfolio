@@ -1,0 +1,2 @@
+- make font smaller past 410px
+- added footer with social media (github and mail really)
