@@ -41,6 +41,9 @@ const Introduction: NextPage = () => {
         Image made by{" "}
         <i>
           <a
+            title="Twitter account of background picture author."
+            target="_blank"
+            rel="noreferrer"
             style={{ textDecoration: "underline" }}
             href="https://unsplash.com/es/@clark_fransa"
           >

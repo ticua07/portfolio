@@ -30,7 +30,7 @@ const Skills: NextPage = () => {
       {/* <hr className={styles.separator} /> */}
       <div className={styles.project} data-aos="fade-left">
         <div className={styles.project__text}>
-          <h1 className={styles.project__title}>MLScraper</h1>
+          <h2 className={styles.project__title}>MLScraper</h2>
           <div className={styles.project__text}>
             <p>Webscraper with UI, for looking at products in Mercado Libre</p>
             <p>Some of it&apos;s features are:</p>
