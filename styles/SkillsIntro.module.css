@@ -1,0 +1,142 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+  padding-inline: 15px;
+  padding-block: 30px;
+  width: 100%;
+  background-color: #131313;
+  gap: 30px;
+}
+
+.title__container {
+  width: 100%;
+  display: flex;
+  /* flex-direction: ol; */
+  gap: 5px;
+  flex: 0.4;
+}
+
+.about__text {
+  flex: 0.8;
+  text-align: center;
+  color: white;
+  font-size: 32px;
+  margin: 0;
+}
+
+.keyword {
+  /* font-family: "SquarePeg"; */
+  font-size: 40px;
+  text-decoration: underline;
+  font-weight: 600;
+  /* letter-spacing: 3px; */
+  font-style: normal;
+}
+
+.title {
+  margin-bottom: 25px;
+  text-align: end;
+  align-self: center;
+  flex: 0.1;
+  color: white;
+  margin: 0;
+  font-family: "JetBrainsMono";
+  font-size: 48px;
+}
+
+@media only screen and (max-width: 750px) {
+  .container {
+    align-items: center;
+  }
+  .title {
+    padding-left: 0px;
+  }
+}
+
+.title__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 0.4;
+}
+
+.separator {
+  width: 100%;
+}
+
+.text__container {
+  margin-bottom: 25px;
+  flex: 0.6;
+  align-self: center;
+  color: white;
+}
+
+.about__text {
+  font-family: "Inconsolata";
+  flex: 0.8;
+  text-align: center;
+  color: white;
+  font-size: 32px;
+  margin: 0;
+}
+
+.keyword {
+  /* font-family: "SquarePeg"; */
+  font-size: 40px;
+  text-decoration: underline;
+  font-weight: 600;
+  /* letter-spacing: 3px; */
+  font-style: normal;
+}
+
+@media only screen and (max-width: 750px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .title__container {
+    flex-direction: column;
+  }
+  .title {
+    padding-left: 0px;
+  }
+  .separator {
+    width: 100%;
+  }
+}
+
+.project {
+  margin-top: 30px;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  flex-basis: 0;
+  gap: 25px;
+  justify-content: center;
+}
+
+.project__title {
+  margin-left: 25px;
+  font-family: "Inconsolata";
+  font-size: 46px;
+}
+
+.project__text {
+  font-family: "Rubik";
+  font-weight: 200;
+}
+
+@media only screen and (max-width: 750px) {
+  .project {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  .project__title {
+    margin: 0;
+    text-align: center;
+  }
+}
