@@ -14,7 +14,6 @@ export default function SkillsIntroduction() {
           <i>Have a look at actual real projects.</i>
         </p>
       </div>
-      <hr style={{ width: "100%" }} />
     </div>
   );
 }
