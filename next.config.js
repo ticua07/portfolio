@@ -5,6 +5,10 @@
 module.exports = {
   reactStrictMode: true,
   swcMinify: true,
+  images: {
+    loader: "akamai",
+    path: "/",
+  },
   webpack(config, options) {
     const { isServer } = options;
     config.module.rules.push({

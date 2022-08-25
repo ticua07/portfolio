@@ -36,3 +36,4 @@ yarn-error.log*
 
 # ngrok file for local testing
 ngrok.exe
+todo.md

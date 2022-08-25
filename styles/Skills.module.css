@@ -1,6 +1,10 @@
 .container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  /* max width is 600px, MAKE THIS RESPONSIVE!!! */
+  grid-template-columns: repeat(auto-fit, 600px);
+  justify-content: center;
+  gap: 15px;
+  grid-template-rows: auto auto;
   min-height: 400px;
   padding-inline: 15px;
   padding-block: 30px;
@@ -8,148 +12,56 @@
   background-color: #131313;
 }
 
-.title__container {
-  width: 100%;
-  display: flex;
-  /* flex-direction: ol; */
-  gap: 5px;
-  flex: 0.4;
+.card {
+  border-radius: 15px;
+  background-color: #fbfcfa;
 }
 
-.about__text {
-  flex: 0.8;
-  text-align: center;
-  color: white;
-  font-size: 32px;
-  margin: 0;
-}
-
-.keyword {
-  /* font-family: "SquarePeg"; */
-  font-size: 40px;
-  text-decoration: underline;
-  font-weight: 600;
-  /* letter-spacing: 3px; */
-  font-style: normal;
-}
-
-.title {
-  margin-bottom: 25px;
-  text-align: end;
-  align-self: center;
-  flex: 0.1;
-  padding-left: 2rem;
-  color: white;
-  font-family: "JetBrainsMono";
-  font-size: 48px;
-}
-
-@media only screen and (max-width: 750px) {
-  .container {
-    align-items: center;
-  }
-  .title {
-    padding-left: 0px;
-  }
-}
-.container {
-  display: flex;
-  width: 100%;
-  background-color: #141414;
-}
-
-.title__container {
-  width: 100%;
+.cardImage {
+  background-image: url("../public/mlscraper.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  flex: 0.4;
-}
+  background-color: gray;
+  height: auto;
 
-.separator {
   width: 100%;
+  border-radius: 15px;
 }
 
-.text__container {
-  margin-bottom: 25px;
-  flex: 0.6;
-  align-self: center;
-  color: white;
-}
-
-.about__text {
-  font-family: "Inconsolata";
-  flex: 0.8;
-  text-align: center;
-  color: white;
-  font-size: 32px;
-  margin: 0;
-}
-
-.keyword {
-  /* font-family: "SquarePeg"; */
-  font-size: 40px;
-  text-decoration: underline;
-  font-weight: 600;
-  /* letter-spacing: 3px; */
-  font-style: normal;
-}
-
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 1000px) {
   .container {
-    flex-direction: column;
-    align-items: center;
-  }
-  .title__container {
-    flex-direction: column;
-  }
-  .title {
-    padding-left: 0px;
-  }
-  .separator {
-    width: 100%;
+    grid-template-columns: none;
   }
 }
-
-.project {
-  margin-top: 30px;
-  height: 600px;
-  display: flex;
-  flex-direction: row;
+.content {
+  border-radius: 13px;
+  opacity: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  transition: 0.2s;
   color: white;
-  flex-basis: 0;
-  gap: 25px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+
+.cardImage:hover .content {
+  opacity: 1;
 }
 
 .project__title {
-  margin-left: 25px;
   font-family: "Inconsolata";
-  font-size: 46px;
+  font-size: 3.5rem;
+  margin: 0;
 }
 
 .project__text {
   font-family: "Rubik";
   font-weight: 200;
-}
-
-@media only screen and (max-width: 750px) {
-  .project {
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-  }
-  .project__title {
-    margin: 0;
-    text-align: center;
-  }
-}
-
-.image {
-  flex: 0.5 1 1;
-  align-self: center;
-  justify-content: center;
-  flex-basis: 0;
-  /* height: 100%; */
-  width: 50%;
+  font-size: 1.2rem;
 }

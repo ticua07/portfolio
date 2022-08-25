@@ -8,7 +8,7 @@ import Skills from "../sections/Skills";
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <>
       <Head>
         <title>Portfolio | Ticua</title>
         <meta
@@ -19,12 +19,14 @@ const Home: NextPage = () => {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      <Script src="https://use.fontawesome.com/80581a26d1.js"></Script>
       <NavBar />
-      <Introduction />
-      <About />
-      <Skills />
-    </div>
+      <div>
+        <Script src="https://use.fontawesome.com/80581a26d1.js"></Script>
+        <Introduction />
+        <About />
+        <Skills />
+      </div>
+    </>
   );
 };
 
